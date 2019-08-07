@@ -11,6 +11,8 @@ author: Hting
 language: zh-CN
 timezone:
 
+favicon_url: bitbug_favicon.ico
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.hting.top
