@@ -5,6 +5,11 @@ date: 2019-09-23 14:34:53
 tags:
 ---
 
+DETECTIONOFSHIPLIST 表是未分区的，现要求对其进行分区。
+
+在oracle中对已存在的表进行表分区有两种办法
+	1. 创建新表，新表有分区，将数据转移到新表中，然后重命名新表，旧表
+	2. 利用oracle11g 在线重定义表的功能，以下就是利用其特性，将DETECTIONOFSHIPLIST转为带分区的
 
 sqlplus>
 ``` sql
@@ -23,11 +28,9 @@ exec  DBMS_REDEFINITION.START_REDEF_TABLE('gdmsaecnew','DETECTIONOFSHIPLIST','DE
 -- 4. 同步对象，如索引，外键等(一定要做，不然会丢失关系)
 -- 建一个sql文件，在sqlplus执行这个sql文件 @/path/xx.sql
 
-DECLARE
-num_errors PLS_INTEGER;
+DECLARE num_errors PLS_INTEGER;
 BEGIN
-  DBMS_REDEFINITION.COPY_TABLE_DEPENDENTS('gdmsaecnew', 'DETECTIONOFSHIPLIST','DETECTIONOFSHIPLIST_TEMP_PART',
-   DBMS_REDEFINITION.CONS_ORIG_PARAMS, TRUE, TRUE, TRUE, TRUE, num_errors);
+  DBMS_REDEFINITION.COPY_TABLE_DEPENDENTS('gdmsaecnew', 'DETECTIONOFSHIPLIST','DETECTIONOFSHIPLIST_TEMP_PART', DBMS_REDEFINITION.CONS_ORIG_PARAMS, TRUE, TRUE, TRUE, TRUE, num_errors);
 END;
 /
 

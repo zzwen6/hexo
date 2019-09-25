@@ -7,3 +7,4 @@
     * [数据库归档日志](/2019/archivelog-database)
     * [数据库闪回](/2019/flashback-database)
     * [表分区](/2019/partition-table)
+    * [表空间](/2019/tablespace)
