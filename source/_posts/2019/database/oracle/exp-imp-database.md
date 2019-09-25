@@ -3,6 +3,7 @@ title: 数据导入导出
 permalink: exp-imp-database
 date: 2019-08-07 14:19:24
 tags:
+type: oracle
 ---
 
 以dmp为文件作为导入导出

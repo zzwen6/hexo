@@ -3,6 +3,7 @@ title: 表空间相关
 permalink: tablespace
 date: 2019-09-25 10:14:52
 tags:
+type: oracle
 ---
 
 ## 1. 表空间使用率查询

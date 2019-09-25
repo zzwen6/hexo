@@ -3,6 +3,7 @@ title: 更改字符集
 permalink: update-oracle-character
 date: 2019-08-07 11:29:54
 tags:
+type: oracle
 ---
 
 ## 更改服务端的字符集

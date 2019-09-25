@@ -3,6 +3,7 @@ title: Oracle分区表
 permalink: partition-table
 date: 2019-09-23 14:34:53
 tags:
+type: oracle
 ---
 
 DETECTIONOFSHIPLIST 表是未分区的，现要求对其进行分区。

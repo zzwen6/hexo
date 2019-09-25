@@ -3,6 +3,7 @@ title: 用户管理
 permalink: user
 date: 2019-08-07 14:18:25
 tags:
+type: oracle
 ---
 
 以下操作用sysdba进行执行

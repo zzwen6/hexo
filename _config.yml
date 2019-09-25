@@ -17,7 +17,7 @@ favicon_url: bitbug_favicon.ico
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.hting.top
 root: /
-permalink: :year/:title/   # 生成html的链接
+permalink: :year/:type/:title/   # 生成html的链接
 permalink_defaults:
 
 # Directory
